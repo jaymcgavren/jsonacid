@@ -64,7 +64,7 @@ describe "Factory" do
       js("factory3 = new Factory();")
       js("factory3.getUnit = function () {return 0.3;}")
       js("it.sourceFactories.push(factory3);")
-      js("it.getUnit();").should be_close(0.2, 0.001)
+      js("it.getUnit('x');").should be_close(0.2, 0.001)
     end
     
   end

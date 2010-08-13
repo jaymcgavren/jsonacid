@@ -4,7 +4,7 @@ require 'rubyonacid/factories/flash'
 
 include RubyOnAcid
 
-describe FlashFactory do
+describe "FlashFactory" do
   
   before :each do
     @page = Harmony::Page.new

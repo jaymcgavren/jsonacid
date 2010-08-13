@@ -15,7 +15,6 @@ shared_examples_for "a factory" do
   
   describe "#get" do
     it "allows setting a maximum" do
-      js("it.getUnit('x');").should == 1.0
       js("it.get('a', 2.0);").should <= 2.0
       js("it.get('b', 10.0);").should <= 10.0
       js("it.get('c', 100.0);").should <= 100.0
